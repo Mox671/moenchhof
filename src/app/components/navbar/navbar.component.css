@@ -1,0 +1,38 @@
+.navbar-brand {
+  font-size: 30px;
+  color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.nav-link {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: darkred;
+}
+
+.nav-link.active {
+  color: darkred;
+}
+
+.navbar {
+  background-color: black;
+  font-weight: normal;
+}
+
+.nav-link {
+  font-size: 20px;
+
+  :hover {
+    background-color: blue;
+  }
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+

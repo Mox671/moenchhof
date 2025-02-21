@@ -1,0 +1,7 @@
+<div class="container">
+  <ngx-masonry class="masonry-container" [options]="masonryOptions" [ordered]="true" >
+    <div *ngFor="let image of images" class="masonry-item">
+      <img [src]="image.source" [alt]="image.alt">
+    </div>
+  </ngx-masonry>
+</div>

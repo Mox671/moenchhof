@@ -1,0 +1,25 @@
+.footer {
+  background-color: #2c2e3A;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: auto;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link:hover {
+  color: darkred;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Die Seite nimmt die volle Höhe des Viewports ein */
+}

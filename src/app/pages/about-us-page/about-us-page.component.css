@@ -1,0 +1,47 @@
+.landing-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.landing-container {
+  width: 100%;
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.landing-image {
+  width: 100%; /* Bildgröße anpassen, je nach Bedarf */
+  height: auto;
+  max-width: 1000px; /* Maximale Breite des Bildes */
+  max-height: 600px;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Textfarbe anpassen */
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Hintergrundfarbe mit Transparenz */
+  padding: 20px;
+}
+
+.title {
+  font-size: 36px;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 18px;
+}
+
+.desc {
+  margin: 2rem 2rem 2rem 2rem;
+}
