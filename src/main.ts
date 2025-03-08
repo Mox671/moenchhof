@@ -1,10 +1,12 @@
+/// <reference types="@angular/localize" />
+
 import {bootstrapApplication, BrowserModule} from "@angular/platform-browser";
 import {AppComponent} from "./app/app.component";
 import {importProvidersFrom, LOCALE_ID} from "@angular/core";
-import {HttpClientModule} from "@angular/common/http";
 import {provideRouter} from "@angular/router";
 import {APP_ROUTES} from "./app/app.routes";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {HttpClientModule} from "@angular/common/http";
 
 bootstrapApplication(AppComponent, {
   providers: [
