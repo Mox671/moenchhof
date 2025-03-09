@@ -1,0 +1,22 @@
+.page-container {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 0;
+}
+
+.container {
+  padding-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.container-data {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.headline {
+  font-weight: bold;
+}

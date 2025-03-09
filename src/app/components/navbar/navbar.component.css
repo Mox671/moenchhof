@@ -10,16 +10,20 @@
   transition: color 0.3s ease;
 }
 
+.nav-button {
+  margin-left: 3rem;
+}
+
 .nav-link:hover {
-  color: darkred;
+  color: black;
 }
 
 .nav-link.active {
-  color: darkred;
+  color: black;
 }
 
 .navbar {
-  background-color: black;
+  background-color: #97b742;
   font-weight: normal;
 }
 
