@@ -1,0 +1,17 @@
+<div class="page-container">
+  <div class="image-container">
+    <img src="assets/images/moenchhof-zimmer.jpg">
+  </div>
+
+  <div class="room-info-container">
+    <h3 class="headline">Ausstattung</h3>
+    <div class="item-container">
+      @for (roomItem of roomItems; track roomItem) {
+        <app-room-item
+          [imgSrc]="roomItem.imgSrc"
+          [headline]="roomItem.headline"
+          [infos]="roomItem.infos"></app-room-item>
+      }
+    </div>
+  </div>
+</div>

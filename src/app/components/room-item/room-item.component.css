@@ -1,0 +1,12 @@
+img {
+  height: 35px;
+  width: 35px;
+}
+
+.headline {
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 0;
+}

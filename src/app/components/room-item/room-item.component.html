@@ -1,0 +1,7 @@
+<div class="room-item-container">
+  <img src="{{imgSrc()}}" alt="">
+  <p class="headline">{{headline()}}</p>
+  @for (info of infos(); track info) {
+    <p>{{info}}</p>
+  }
+</div>
