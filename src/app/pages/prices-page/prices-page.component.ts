@@ -9,5 +9,5 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./prices-page.component.css']
 })
 export class PricesPageComponent {
-
+  price = 37.50;
 }
