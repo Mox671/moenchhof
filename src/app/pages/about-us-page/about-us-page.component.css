@@ -4,8 +4,12 @@
   margin-right: auto;
 }
 
-.landing-text {
+.text-container {
   padding: 2rem 0;
-  max-width: 670px;
   text-align: justify;
+  display: flex;
+}
+
+.header {
+  margin-top: 2rem;
 }
