@@ -18,6 +18,16 @@ img {
 .header {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
+}
+
+.headline {
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.sub-headline {
+  font-weight: bold;
 }
 
 .sub-header {
@@ -27,6 +37,23 @@ img {
   justify-content: space-between;
 }
 
+.room-general {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.room-price {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
 .image-wrapper {
-  object-fit: cover;  /
+  object-fit: cover;
 }

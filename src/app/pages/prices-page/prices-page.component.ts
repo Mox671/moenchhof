@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { registerLocaleData } from '@angular/common';
+import localeDe from '@angular/common/locales/de';
+import localeDeExtra from '@angular/common/locales/extra/de';
 
 @Component({
   selector: 'app-prices-page',
@@ -10,4 +13,12 @@ import { CommonModule } from '@angular/common';
 })
 export class PricesPageComponent {
   price = 37.50;
+  toggleDetails = false;
+  roomItems: string[] = ['Außen-Rolladen/-Jalousien', 'Fernseher', 'Gartenmöbel', 'Bettwäsche vorhanden', 'Fußende der Betten offen', 'Haarföhn', 'Handtücher vorhanden', 'Safe', 'WiFi', 'Ruhiges Zimmer/Appartment']
+
+  constructor() {
+    registerLocaleData(localeDe, 'de-DE', localeDeExtra);
+  }
+
+
 }

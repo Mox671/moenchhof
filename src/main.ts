@@ -1,5 +1,4 @@
 /// <reference types="@angular/localize" />
-
 import {bootstrapApplication, BrowserModule} from "@angular/platform-browser";
 import {AppComponent} from "./app/app.component";
 import {importProvidersFrom, LOCALE_ID} from "@angular/core";
@@ -12,7 +11,7 @@ bootstrapApplication(AppComponent, {
   providers: [
     importProvidersFrom(BrowserModule, HttpClientModule, BrowserAnimationsModule),
     provideRouter(APP_ROUTES),
-    {provide: LOCALE_ID, useValue: 'de'}
+    { provide: LOCALE_ID, useValue: 'de-DE' }
   ],
 })
   .catch(err => console.error(err));

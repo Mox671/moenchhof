@@ -8,26 +8,26 @@
       </div>
       <div class="col-md-8">
         <div class="header">
-          <p>Doppelzimmer, Dusche, WC, Nichtraucher</p>
+          <span class="headline">Doppelzimmer, Dusche, WC, Nichtraucher</span>
           <div class="sub-header">
             <div class="room-general">
-              <p>Größe: 20 m²</p>
-              <p>Zimmer: 1</p>
-              <p>Schlafzimmer: 1</p>
-              <p>Personen: 2</p>
+              <span>Größe: 20 m²</span>
+              <span>Zimmer: 1</span>
+              <span>Schlafzimmer: 1</span>
+              <span>Personen: 2</span>
             </div>
             <div class="room-price">
-              <p>Preis ab</p>
-              <p>{{ price }} €</p>
-              <p>pro Person/Nacht</p>
+              <span>Preis ab</span>
+              <span class="price">{{ price | currency: 'EUR'}}</span>
+              <span>pro Person/Nacht</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <p>Helle. freundliche Zimmer mit Blick auf den wunderschönen Innenhof.</p>
-    <div class="content">
-      <p>Ausstattung Zimmer/Appartment</p>
+    <p>Helle, freundliche Zimmer mit Blick auf den wunderschönen Innenhof.</p>
+    <div *ngIf="toggleDetails" class="content">
+      <span>Ausstattung Zimmer/Appartment</span>
     </div>
   </div>
 </div>
