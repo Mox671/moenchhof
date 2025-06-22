@@ -1,18 +1,21 @@
 import {AfterViewInit, Component} from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {MatCard, MatCardContent, MatCardHeader, MatCardTitle} from "@angular/material/card";
+import {MatIcon} from "@angular/material/icon";
+import {GoogleReview} from "./review";
 
 declare const google: any;
 
 @Component({
   selector: 'app-guest-book-page',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MatCard, MatCardHeader, MatIcon, MatCardContent, MatCardTitle],
   templateUrl: './guest-book-page.component.html',
   styleUrls: ['./guest-book-page.component.css']
 })
 export class GuestBookPageComponent implements AfterViewInit {
   service: any;
-  public reviews = [];
+  public reviews: GoogleReview[] = [];
 
   constructor() {}
 

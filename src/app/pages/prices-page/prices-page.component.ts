@@ -12,13 +12,7 @@ import localeDeExtra from '@angular/common/locales/extra/de';
   styleUrls: ['./prices-page.component.css']
 })
 export class PricesPageComponent {
-  price = 37.50;
-  toggleDetails = false;
-  roomItems: string[] = ['Außen-Rolladen/-Jalousien', 'Fernseher', 'Gartenmöbel', 'Bettwäsche vorhanden', 'Fußende der Betten offen', 'Haarföhn', 'Handtücher vorhanden', 'Safe', 'WiFi', 'Ruhiges Zimmer/Appartment']
-
   constructor() {
     registerLocaleData(localeDe, 'de-DE', localeDeExtra);
   }
-
-
 }

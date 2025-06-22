@@ -6,12 +6,13 @@ import {provideRouter} from "@angular/router";
 import {APP_ROUTES} from "./app/app.routes";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {HttpClientModule} from "@angular/common/http";
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 bootstrapApplication(AppComponent, {
   providers: [
     importProvidersFrom(BrowserModule, HttpClientModule, BrowserAnimationsModule),
     provideRouter(APP_ROUTES),
-    { provide: LOCALE_ID, useValue: 'de-DE' }
+    { provide: LOCALE_ID, useValue: 'de-DE' }, provideAnimationsAsync()
   ],
 })
   .catch(err => console.error(err));
