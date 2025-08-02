@@ -1,0 +1,44 @@
+# Cursor Rules für Gästehaus Mönchhof Projekt
+
+## Projekt-Übersicht
+Dies ist ein Angular-Projekt für die Website des Gästehauses Mönchhof. Das Projekt verwendet:
+- Angular 18+ mit standalone components
+- Bootstrap für das Styling
+- TypeScript
+- Responsive Design
+
+## Coding Standards
+- Verwende deutsche Kommentare und Variablennamen wo sinnvoll
+- Halte Komponenten klein und fokussiert
+- Verwende Bootstrap-Klassen für Layout und Styling
+- Nutze Angular best practices (standalone components, lazy loading)
+
+## Projektstruktur
+- `src/app/pages/` - Hauptseiten-Komponenten
+- `src/app/components/` - Wiederverwendbare UI-Komponenten
+- `src/app/assets/` - Bilder und Icons
+- Routing über `app.routes.ts`
+
+## Styling Guidelines
+- Verwende Bootstrap-Klassen primär
+- Custom CSS nur wenn nötig
+- Responsive Design für alle Komponenten
+- Konsistente Farbpalette (Blau-Töne für Mönchhof)
+
+## Content Guidelines
+- Alle Texte auf Deutsch
+- Professioneller, gastfreundlicher Ton
+- Fokus auf Gästehaus-Features (Zimmer, Preise, Kontakt)
+- Bilder und Assets in `src/assets/images/`
+
+## Wichtige Hinweise
+- Keine sensiblen Daten in Code committen
+- API-Keys in separaten Konfigurationsdateien
+- Teste Änderungen vor dem Commit
+- Halte das Projekt sauber und organisiert
+
+## Naming Conventions
+- Komponenten: kebab-case (z.B. `about-us-page`)
+- Dateien: kebab-case
+- Variablen: camelCase
+- Konstanten: UPPER_SNAKE_CASE 
