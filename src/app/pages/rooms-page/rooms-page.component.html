@@ -1,17 +1,53 @@
 <div class="page-container">
-  <div class="image-container">
-    <img src="assets/images/moenchhof-zimmer.jpg">
+  <div class="hero-section">
+    <h1 class="text-center mb-5">Unsere Zimmer</h1>
+    <p class="text-center mb-4">Entdecken Sie unsere komfortablen und gemütlichen Zimmer im Gästehaus Mönchhof</p>
   </div>
 
-  <div class="room-info-container">
-    <h3 class="headline">Ausstattung</h3>
-    <div class="item-container">
-      @for (roomItem of roomItems; track roomItem) {
-        <app-room-item
-          [imgSrc]="roomItem.imgSrc"
-          [headline]="roomItem.headline"
-          [infos]="roomItem.infos"></app-room-item>
-      }
+  <div class="images-container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 mb-4">
+        <div class="image-card">
+          <img src="assets/images/moenchhof-zimmer.jpg" alt="Zimmer Mönchhof" class="room-image">
+          <div class="image-overlay">
+            <h3>Gemütliche Zimmer</h3>
+            <p>Komfort und Tradition vereint</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-4">
+        <div class="image-card">
+          <img src="assets/images/moenchhof-2bed-room.jpg" alt="2-Bett Zimmer" class="room-image">
+          <div class="image-overlay">
+            <h3>2-Bett Zimmer</h3>
+            <p>Perfekt für Familien und Freunde</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="equipment-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="equipment-header">
+            <h2 class="text-center mb-4">Ausstattung</h2>
+            <p class="text-center mb-5">Alle unsere Zimmer sind mit modernem Komfort ausgestattet</p>
+          </div>
+          
+          <div class="equipment-grid">
+            @for (roomItem of roomItems; track roomItem) {
+              <div class="equipment-item">
+                <app-room-item
+                  [imgSrc]="roomItem.imgSrc"
+                  [headline]="roomItem.headline"
+                  [infos]="roomItem.infos"></app-room-item>
+              </div>
+            }
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

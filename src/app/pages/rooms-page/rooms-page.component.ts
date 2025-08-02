@@ -4,11 +4,10 @@ import {RoomItemComponent} from "../../components/room-item/room-item.component"
 import {RoomItem} from "./room-item";
 
 @Component({
-  selector: 'app-rooms-page',
-  standalone: true,
-  imports: [CommonModule, RoomItemComponent],
-  templateUrl: './rooms-page.component.html',
-  styleUrls: ['./rooms-page.component.css']
+    selector: 'app-rooms-page',
+    imports: [CommonModule, RoomItemComponent],
+    templateUrl: './rooms-page.component.html',
+    styleUrls: ['./rooms-page.component.css']
 })
 export class RoomsPageComponent {
   roomItems: RoomItem[] = [

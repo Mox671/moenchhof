@@ -2,10 +2,11 @@
 
 ## Projekt-Übersicht
 Dies ist ein Angular-Projekt für die Website des Gästehauses Mönchhof. Das Projekt verwendet:
-- Angular 18+ mit standalone components
+- Angular 19 mit standalone components
 - Bootstrap für das Styling
-- TypeScript
+- TypeScript 5.8+
 - Responsive Design
+- Neue Application Builder (migriert von Browser Builder)
 
 ## Coding Standards
 - Verwende deutsche Kommentare und Variablennamen wo sinnvoll

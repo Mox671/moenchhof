@@ -1,1 +1,43 @@
-<script>     window.dw = window.dw || function () { (dw.q = dw.q || []).push(arguments) };     dw(      'settings',      '1228b5ee-517e-4174-a56f-691f0c9d68c5',      {       "context": {        "serviceIds": [],        "productIds": [],        "packageIds": []       },       "lang": 'de'      }     );    </script>    <script async src="https://web5.deskline.net/start/ACCOWEBRLP/1228b5ee-517e-4174-a56f-691f0c9d68c5/index.js"></script>
+<div id="deskline-widget-container">
+  <div id="deskline-widget"></div>
+</div>
+
+<script>
+  // Deskline Widget komplett außerhalb von Angular laden
+  document.addEventListener('DOMContentLoaded', function() {
+    // Widget Konfiguration
+    window.dw = window.dw || function () { 
+      (dw.q = dw.q || []).push(arguments) 
+    }; 
+    
+    dw(
+      'settings',
+      '1228b5ee-517e-4174-a56f-691f0c9d68c5',
+      {
+        "context": {
+          "serviceIds": [],
+          "productIds": [],
+          "packageIds": []
+        },
+        "lang": 'de'
+      }
+    );
+
+    // Script laden und auf Erfolg warten
+    var script = document.createElement('script');
+    script.src = 'https://web5.deskline.net/start/ACCOWEBRLP/1228b5ee-517e-4174-a56f-691f0c9d68c5/index.js';
+    script.async = true;
+    
+    script.onload = function() {
+      console.log('Deskline Widget geladen');
+    };
+    
+    script.onerror = function() {
+      console.error('Fehler beim Laden des Deskline Widgets');
+    };
+    
+    document.head.appendChild(script);
+  });
+</script>
+
+

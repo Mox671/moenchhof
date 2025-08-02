@@ -3,15 +3,14 @@ import {CommonModule} from "@angular/common";
 import {NgbCarousel, NgbSlide} from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
-  selector: 'app-image-carousel',
-  templateUrl: './image-carousel.component.html',
-  styleUrls: ['./image-carousel.component.css'],
-  imports: [
-    CommonModule,
-    NgbCarousel,
-    NgbSlide
-  ],
-  standalone: true
+    selector: 'app-image-carousel',
+    templateUrl: './image-carousel.component.html',
+    styleUrls: ['./image-carousel.component.css'],
+    imports: [
+        CommonModule,
+        NgbCarousel,
+        NgbSlide
+    ]
 })
 export class ImageCarouselComponent {
 }

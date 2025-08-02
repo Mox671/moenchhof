@@ -2,13 +2,10 @@ import {AfterViewInit, Component} from '@angular/core';
 import * as L from 'leaflet';
 
 @Component({
-  selector: 'app-map',
-  templateUrl: './map.component.html',
-  styleUrls: ['./map.component.css'],
-  imports: [
-
-  ],
-  standalone: true
+    selector: 'app-map',
+    templateUrl: './map.component.html',
+    styleUrls: ['./map.component.css'],
+    imports: []
 })
 export class MapComponent implements AfterViewInit {
   private map!: L.Map;
