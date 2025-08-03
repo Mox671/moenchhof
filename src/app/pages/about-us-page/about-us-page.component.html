@@ -1,3 +1,8 @@
+<!-- Hauptbild prominent am Anfang -->
+<div class="container-fluid p-0 mb-5 mt-4" style="margin-top: 3rem;">
+  <img src="assets/images/moenchhof.jpg" class="d-block w-100" alt="Moenchhof Hauptbild" style="max-height: 700px; object-fit: cover;">
+</div>
+
 <h1 class="header">Herzlich willkommen!</h1>
 
 <div class="container-sm text-container">
@@ -5,7 +10,7 @@
     300 Einwohner-Dörfchen hat seinen eigenen Charme. Wir liegen ruhig (nur 1km abseits der
     Deutschen Weinstrasse) aber dennoch Zentral. Freinsheim mit seiner historischen Stadtmauer
     (3km) und Bad Dürkheim (10km) sind beliebte Ausflugsziele. Golfbegeisterte erreichen den
-    Golfplatz „Deutsche Weinstraße“ bequem in 5 Gehminuten.
+    Golfplatz „Deutsche Weinstraße" bequem in 5 Gehminuten.
     In ca. 5 km Entfernung können sie die Natur des Pfälzer Waldes zu Fuß oder mit dem Fahrrad erkunden. Auf Anfrage
     stellen wir Ihnen gerne eine Route zusammen.
     Das historische Gebäude lädt sie zum Urlaub machen ein. Hier können Sie einfach mal die Seele baumeln lassen und dem
@@ -15,71 +20,64 @@
   </p>
 </div>
 
-<app-image-carousel></app-image-carousel>
+<!-- Image Carousel mit allen moenchhof-Bildern -->
+<div class="container mb-5">
+  <h2 class="text-center mb-4">Entdecken Sie den Mönchhof</h2>
+  <app-image-carousel></app-image-carousel>
+</div>
 
+<!-- Custom Cards als Links zu anderen Seiten -->
 <div class="container px-4 py-5" id="custom-cards">
-  <h2 class="pb-2 border-bottom">Custom cards</h2>
+  <h2 class="pb-2 border-bottom text-center">Weitere Informationen</h2>
 
   <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+    <!-- Kontakt Card -->
     <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('assets/images/moenchhof-tor.jpg');">
         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
-          <ul class="d-flex list-unstyled mt-auto">
-            <li class="me-auto">
-              <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-            </li>
-            <li class="d-flex align-items-center me-3">
-              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-              <small>Earth</small>
-            </li>
-            <li class="d-flex align-items-center">
-              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-              <small>3d</small>
-            </li>
-          </ul>
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Kontakt</h3>
+            <p class="mb-4">Nehmen Sie Kontakt mit uns auf. Wir freuen uns auf Ihre Anfrage und stehen Ihnen gerne zur Verfügung.</p>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <a href="/contact" class="btn btn-outline-light">Kontakt aufnehmen</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
 
+    <!-- Gästebuch Card -->
     <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('assets/images/moenchhof-hof.jpg');">
         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
-          <ul class="d-flex list-unstyled mt-auto">
-            <li class="me-auto">
-              <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-            </li>
-            <li class="d-flex align-items-center me-3">
-              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-              <small>Pakistan</small>
-            </li>
-            <li class="d-flex align-items-center">
-              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-              <small>4d</small>
-            </li>
-          </ul>
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Gästebuch</h3>
+            <p class="mb-4">Lesen Sie die Erfahrungen unserer Gäste und hinterlassen Sie Ihre eigenen Eindrücke.</p>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <a href="/guest-book" class="btn btn-outline-light">Gästebuch ansehen</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
 
+    <!-- Zimmer Card -->
     <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
-          <ul class="d-flex list-unstyled mt-auto">
-            <li class="me-auto">
-              <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-            </li>
-            <li class="d-flex align-items-center me-3">
-              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-              <small>California</small>
-            </li>
-            <li class="d-flex align-items-center">
-              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-              <small>5d</small>
-            </li>
-          </ul>
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('assets/images/moenchhof-zimmer.jpg');">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Unsere Zimmer</h3>
+            <p class="mb-4">Entdecken Sie unsere gemütlichen Gästezimmer mit modernem Komfort in historischem Ambiente.</p>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <a href="/rooms" class="btn btn-outline-light">Zimmer ansehen</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

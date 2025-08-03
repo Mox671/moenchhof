@@ -5,6 +5,7 @@ import {GuestBookPageComponent} from "./pages/guest-book-page/guest-book-page.co
 import {RoomsPageComponent} from "./pages/rooms-page/rooms-page.component";
 import {DataPrivacyPageComponent} from "./data-privacy-page/data-privacy-page.component";
 import {ImpressumPageComponent} from "./impressum-page/impressum-page.component";
+import {InformationPageComponent} from "./pages/information-page/information-page.component";
 
 export const APP_ROUTES: Routes = [
   {
@@ -31,6 +32,11 @@ export const APP_ROUTES: Routes = [
     path: 'zimmer',
     pathMatch: 'full',
     component: RoomsPageComponent
+  },
+  {
+    path: 'information',
+    pathMatch: 'full',
+    component: InformationPageComponent
   },
   {
     path: 'impressum',

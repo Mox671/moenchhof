@@ -76,8 +76,7 @@ export class GuestBookPageComponent implements AfterViewInit {
 
   public openAllReviews() {
     // Google Maps Place URL für alle Reviews
-    const placeId = 'ChIJ-QKPM4cwlkcRrHg6spPZld0';
-    const url = `https://www.google.com/maps/place/?q=place_id:${placeId}`;
+    const url = `https://www.google.com/maps/place/Gästehäuser+Mönchhof/@49.5227999,8.1840104,17z/data=!4m11!3m10!1s0x47963087338f02f9:0xdd95d993b23a78ac!5m2!4m1!1i2!8m2!3d49.5227999!4d8.1840104!9m1!1b1!16s%2Fg%2F1tjrnxwf?entry=ttu&g_ep=EgoyMDI1MDczMC4wIKXMDSoASAFQAw%3D%3D`;
     window.open(url, '_blank');
   }
 
