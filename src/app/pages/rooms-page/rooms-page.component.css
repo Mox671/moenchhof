@@ -1,55 +1,59 @@
+/* Main Container - Sauberer weißer Hintergrund */
 .page-container {
-  padding: 2rem 0;
-  background-color: #f8f9fa;
+  background: white;
   min-height: 100vh;
 }
 
-/* Hero Section */
+/* Hero Section - Mit subtiler Schattierung */
 .hero-section {
   text-align: center;
-  padding: 3rem 0;
-  background: white;
-  margin-bottom: 2rem;
+  padding: 4rem 0 3rem 0;
+  background: #ffffff;
+  border-bottom: 1px solid #e9ecef;
+  margin-bottom: 0;
 }
 
 .hero-section h1 {
   color: #2c3e50;
-  font-weight: 600;
-  margin-bottom: 1rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .hero-section p {
   color: #6c757d;
-  font-size: 1.1rem;
-  max-width: 600px;
+  font-size: 1.2rem;
+  max-width: 700px;
   margin: 0 auto;
+  line-height: 1.6;
 }
 
-/* Images Container */
+/* Images Container - Mit mehr Weißraum */
 .images-container {
-  padding: 2rem 0;
+  padding: 4rem 0;
   background: white;
 }
 
 .image-card {
   position: relative;
-  border-radius: 15px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
   height: 100%;
+  border: 1px solid #f1f3f4;
 }
 
 .image-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .room-image {
   width: 100%;
-  height: 300px;
+  height: 350px;
   object-fit: cover;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 .image-overlay {
@@ -57,115 +61,170 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
   color: white;
-  padding: 2rem 1.5rem 1.5rem;
-  border-radius: 0 0 15px 15px;
+  padding: 2.5rem 2rem 2rem;
+  border-radius: 0 0 20px 20px;
 }
 
 .image-overlay h3 {
-  margin: 0 0 0.5rem 0;
-  font-weight: 600;
-  font-size: 1.3rem;
+  margin: 0 0 0.8rem 0;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .image-overlay p {
   margin: 0;
-  font-size: 1rem;
-  opacity: 0.9;
+  font-size: 1.1rem;
+  opacity: 0.95;
+  font-weight: 300;
 }
 
-/* Equipment Section */
+/* Equipment Section - Moderne Card-Struktur */
 .equipment-section {
-  background-color: #e9ecef;
-  padding: 3rem 0;
-  margin-top: 2rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  padding: 4rem 0;
+  border-top: 1px solid #e9ecef;
 }
 
 .equipment-header {
-  margin-bottom: 3rem;
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
 .equipment-header h2 {
   color: #2c3e50;
-  font-weight: 600;
-  margin-bottom: 1rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
 }
 
 .equipment-header p {
   color: #6c757d;
-  font-size: 1.1rem;
-  max-width: 600px;
+  font-size: 1.2rem;
+  max-width: 700px;
   margin: 0 auto;
+  line-height: 1.6;
 }
 
 .equipment-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
   margin-top: 2rem;
 }
 
 .equipment-item {
   background: white;
-  border-radius: 15px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #f1f3f4;
+  position: relative;
+  overflow: hidden;
+}
+
+.equipment-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #97b742, #7a9c3a);
+  border-radius: 20px 20px 0 0;
 }
 
 .equipment-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .page-container {
-    padding: 1rem 0;
+    padding: 0;
   }
   
   .hero-section {
-    padding: 2rem 0;
+    padding: 3rem 0 2rem 0;
   }
   
   .hero-section h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
+  }
+  
+  .hero-section p {
+    font-size: 1.1rem;
+  }
+  
+  .images-container {
+    padding: 3rem 0;
   }
   
   .room-image {
-    height: 250px;
+    height: 280px;
+  }
+  
+  .equipment-section {
+    padding: 3rem 0;
   }
   
   .equipment-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 2rem;
   }
   
   .equipment-item {
-    padding: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .equipment-header h2 {
+    font-size: 1.8rem;
   }
 }
 
-/* Animation für das Laden */
+/* Animationen - Sanftere Übergänge */
 .image-card {
-  animation: fadeInUp 0.6s ease;
+  animation: fadeInUp 0.8s ease;
 }
 
 .equipment-item {
-  animation: fadeInUp 0.6s ease;
+  animation: fadeInUp 0.8s ease;
 }
 
-.image-card:nth-child(1) { animation-delay: 0.1s; }
-.image-card:nth-child(2) { animation-delay: 0.2s; }
+.image-card:nth-child(1) { animation-delay: 0.2s; }
+.image-card:nth-child(2) { animation-delay: 0.4s; }
+
+.equipment-item:nth-child(1) { animation-delay: 0.6s; }
+.equipment-item:nth-child(2) { animation-delay: 0.8s; }
+.equipment-item:nth-child(3) { animation-delay: 1.0s; }
+.equipment-item:nth-child(4) { animation-delay: 1.2s; }
 
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Zusätzliche Verbesserungen */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Hover-Effekte für bessere Interaktivität */
+.image-card:hover .image-overlay {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+}
+
+.equipment-item:hover::before {
+  background: linear-gradient(90deg, #7a9c3a, #97b742);
 }

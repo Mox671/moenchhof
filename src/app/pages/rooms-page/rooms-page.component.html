@@ -1,52 +1,56 @@
 <div class="page-container">
-  <div class="hero-section">
-    <h1 class="text-center mb-5">Unsere Zimmer</h1>
-    <p class="text-center mb-4">Entdecken Sie unsere komfortablen und gemütlichen Zimmer im Gästehaus Mönchhof</p>
-  </div>
-
-  <div class="images-container">
-    <div class="row">
-      <div class="col-lg-6 col-md-6 mb-4">
-        <div class="image-card">
-          <img src="assets/images/moenchhof-zimmer.jpg" alt="Zimmer Mönchhof" class="room-image">
-          <div class="image-overlay">
-            <h3>Gemütliche Zimmer</h3>
-            <p>Komfort und Tradition vereint</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6 mb-4">
-        <div class="image-card">
-          <img src="assets/images/moenchhof-2bed-room.jpg" alt="2-Bett Zimmer" class="room-image">
-          <div class="image-overlay">
-            <h3>2-Bett Zimmer</h3>
-            <p>Perfekt für Familien und Freunde</p>
-          </div>
-        </div>
-      </div>
+  <!-- Hero Section mit verbesserter Struktur -->
+  <section class="hero-section">
+    <div class="container">
+      <h1 class="text-center mb-5">Unsere Zimmer</h1>
+      <p class="text-center mb-4">Entdecken Sie unsere komfortablen und gemütlichen Zimmer im Gästehaus Mönchhof</p>
     </div>
-  </div>
+  </section>
 
-  <div class="equipment-section">
+  <!-- Images Container mit besserer Struktur -->
+  <section class="images-container">
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <div class="equipment-header">
-            <h2 class="text-center mb-4">Ausstattung</h2>
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="image-card">
+            <img src="assets/images/moenchhof-zimmer.jpg" alt="Zimmer Mönchhof" class="room-image">
+            <div class="image-overlay">
+              <h3>Gemütliche Zimmer</h3>
+              <p>Komfort und Tradition vereint</p>
+            </div>
           </div>
-          
-          <div class="equipment-grid">
-            @for (roomItem of roomItems; track roomItem) {
-              <div class="equipment-item">
-                <app-room-item
-                  [imgSrc]="roomItem.imgSrc"
-                  [headline]="roomItem.headline"
-                  [infos]="roomItem.infos"></app-room-item>
-              </div>
-            }
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="image-card">
+            <img src="assets/images/moenchhof-2bed-room.jpg" alt="2-Bett Zimmer" class="room-image">
+            <div class="image-overlay">
+              <h3>2-Bett Zimmer</h3>
+              <p>Perfekt für Familien und Freunde</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <!-- Equipment Section mit moderner Struktur -->
+  <section class="equipment-section">
+    <div class="container">
+      <div class="equipment-header">
+        <h2 class="text-center mb-4">Ausstattung</h2>
+        <p class="text-center">Entdecken Sie die Annehmlichkeiten, die Ihren Aufenthalt unvergesslich machen</p>
+      </div>
+      
+      <div class="equipment-grid">
+        @for (roomItem of roomItems; track roomItem) {
+          <div class="equipment-item">
+            <app-room-item
+              [imgSrc]="roomItem.imgSrc"
+              [headline]="roomItem.headline"
+              [infos]="roomItem.infos"></app-room-item>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
 </div>
