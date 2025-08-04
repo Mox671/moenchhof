@@ -34,6 +34,12 @@ jobs:
       - name: Build for GitHub Pages
         run: npm run build:github-pages
         
+      - name: List build output
+        run: ls -la dist/moenchhof-webseite/
+        
+      - name: Check index.html
+        run: cat dist/moenchhof-webseite/index.html
+        
       - name: Setup Pages
         uses: actions/configure-pages@v4
         
