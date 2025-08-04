@@ -1,0 +1,10 @@
+.content-indent {
+  padding-left: 2rem;
+  margin-top: 1rem;
+}
+
+h3 {
+  color: #97b742;
+  border-bottom: 2px solid #97b742;
+  padding-bottom: 0.5rem;
+}
