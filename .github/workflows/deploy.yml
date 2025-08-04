@@ -35,10 +35,13 @@ jobs:
         run: npm run build:github-pages
         
       - name: List build output
-        run: ls -la dist/moenchhof-webseite/
+        run: ls -la dist/moenchhof-webseite/browser/
+        
+      - name: Rename index file
+        run: mv dist/moenchhof-webseite/browser/index-github.html dist/moenchhof-webseite/browser/index.html
         
       - name: Check index.html
-        run: cat dist/moenchhof-webseite/index.html
+        run: cat dist/moenchhof-webseite/browser/index.html
         
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -46,7 +49,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist/moenchhof-webseite'
+          path: './dist/moenchhof-webseite/browser'
 
   deploy:
     environment:
