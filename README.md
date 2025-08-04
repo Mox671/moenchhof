@@ -1,27 +1,63 @@
-# MoenchhofWebseite
+# Gästehaus Mönchhof Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
+Diese Angular-Anwendung ist die offizielle Website des Gästehauses Mönchhof.
 
-## Development server
+## Entwicklung
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Voraussetzungen
+- Node.js (Version 18 oder höher)
+- npm
 
-## Code scaffolding
+### Installation
+```bash
+npm install
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Entwicklungsserver starten
+```bash
+npm start
+```
+Die Anwendung ist dann unter `http://localhost:4200` verfügbar.
 
-## Build
+### Build für Produktion
+```bash
+npm run build
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## GitHub Pages Deployment
 
-## Running unit tests
+Diese Anwendung ist für GitHub Pages optimiert und wird automatisch bei jedem Push auf den `main` Branch deployed.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Automatisches Deployment
+1. Push auf den `main` Branch
+2. GitHub Actions baut die Anwendung automatisch
+3. Die Website wird auf `https://[username].github.io/moenchhof/` deployed
 
-## Running end-to-end tests
+### Manuelles Deployment
+```bash
+npm run build:github-pages
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### GitHub Pages Konfiguration
+- **Repository Name**: `moenchhof`
+- **Base Href**: `/moenchhof/`
+- **Branch**: `gh-pages` (wird automatisch erstellt)
 
-## Further help
+## Projektstruktur
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+src/
+├── app/
+│   ├── components/          # Wiederverwendbare Komponenten
+│   ├── pages/              # Seitenkomponenten
+│   └── ...
+├── assets/                 # Bilder, Icons, etc.
+└── ...
+```
+
+## Technologien
+
+- Angular 19
+- Bootstrap 5
+- TypeScript
+- GitHub Actions für CI/CD
