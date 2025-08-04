@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {RouterOutlet} from "@angular/router";
+import {RouterOutlet, RouterLink, Router} from "@angular/router";
 import {NavbarComponent} from "./components/navbar/navbar.component";
 import {animate, style, transition, trigger} from "@angular/animations";
 
@@ -10,6 +10,7 @@ import {animate, style, transition, trigger} from "@angular/animations";
     styleUrls: ['./app.component.css'],
     imports: [
         RouterOutlet,
+        RouterLink,
         NavbarComponent,
     ],
     animations: [
@@ -24,7 +25,14 @@ import {animate, style, transition, trigger} from "@angular/animations";
 export class AppComponent {
   title = 'moenchhof-webseite';
 
+  constructor(private router: Router) {}
+
   prepareRoute(outlet: RouterOutlet) {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
+  }
+
+  navigateToFragment(fragment: string) {
+    // Navigiere zur Information-Page und dann zum Fragment
+    this.router.navigate(['/information'], { fragment: fragment });
   }
 }

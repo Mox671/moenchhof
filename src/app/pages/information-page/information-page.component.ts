@@ -20,8 +20,16 @@ export class InformationPageComponent implements OnInit {
           if (element) {
             element.scrollIntoView({ behavior: 'smooth', block: 'start' });
           }
-        }, 100);
+        }, 300); // Längere Verzögerung für bessere Kompatibilität
       }
     });
+  }
+
+  // Methode für manuelle Navigation zu Fragmenten
+  scrollToFragment(fragment: string) {
+    const element = document.getElementById(fragment);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 }

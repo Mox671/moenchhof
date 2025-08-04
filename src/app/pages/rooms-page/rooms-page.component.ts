@@ -25,7 +25,7 @@ export class RoomsPageComponent {
     {
       imgSrc: 'assets/icons/people.svg',
       headline: 'Eignung',
-      infos: ['Einzelreisende', 'Familien', 'Geschäftsreisende', 'Nichtraucher', 'Senioren', 'Singles']
+      infos: ['Einzelreisende', 'Familien', 'Geschäftsreisende', 'Nichtraucher', 'Senioren']
     },
     {
       imgSrc: 'assets/icons/money-wallet.svg',

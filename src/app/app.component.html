@@ -12,9 +12,9 @@
     </a>
 
     <ul class="nav col-md-4 justify-content-end">
-      <li class="nav-item"><a href="/information#impressum" class="nav-link px-2 text-muted footer-link">Impressum</a></li>
-      <li class="nav-item"><a href="/information#datenschutz" class="nav-link px-2 text-muted footer-link">Datenschutz</a></li>
-      <li class="nav-item"><a href="/information#barrierefreiheit" class="nav-link px-2 text-muted footer-link">Barrierefreiheit</a></li>
+      <li class="nav-item"><a routerLink="/information" fragment="impressum" class="nav-link px-2 text-muted footer-link" (click)="navigateToFragment('impressum')">Impressum</a></li>
+      <li class="nav-item"><a routerLink="/information" fragment="datenschutz" class="nav-link px-2 text-muted footer-link" (click)="navigateToFragment('datenschutz')">Datenschutz</a></li>
+      <li class="nav-item"><a routerLink="/information" fragment="barrierefreiheit" class="nav-link px-2 text-muted footer-link" (click)="navigateToFragment('barrierefreiheit')">Barrierefreiheit</a></li>
     </ul>
   </footer>
 </div>
